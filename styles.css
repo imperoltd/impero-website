@@ -83,3 +83,16 @@ nav {
   font-size: 14px;
   color: #666;
 }
+.cta-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 18px;
+  border:1px solid #fff;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:1px;
+}
+.cta-btn:hover{
+  opacity:.7;
+}
