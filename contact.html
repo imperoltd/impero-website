@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Impero Ltd</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">IMPERO</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="careers.html">Careers</a>
+        <a href="culture.html">Culture</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="lead">Apply, collaborate, or ask a question — we’ll get back to you.</p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="form-card">
+
+        <!-- Netlify Form -->
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none;">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" placeholder="+44…">
+          </div>
+
+          <div class="field">
+            <label for="reason">Reason</label>
+            <select id="reason" name="reason" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Careers / Apply</option>
+              <option>Partnership</option>
+              <option>Client enquiry</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us a bit about you…" required></textarea>
+          </div>
+
+          <button class="cta-btn dark" type="submit">Send message</button>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="y"></span> Impero Ltd</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
