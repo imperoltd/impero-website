@@ -163,7 +163,16 @@ nav {
   border-radius:8px;
   font: inherit;
 }
+.values-grid{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
 
+@media (max-width: 900px){
+  .values-grid{ grid-template-columns: 1fr; }
+}
 .cta-btn.dark{
   background:#111;
   color:#fff;
