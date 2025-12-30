@@ -43,6 +43,9 @@ nav {
   transform: scale(1.05);
   opacity: 0.9;
 }
+.navbar {
+  align-items: center;
+}
 .brand {
   font-weight: 800;
   letter-spacing: 2px;
