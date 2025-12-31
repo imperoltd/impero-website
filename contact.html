@@ -4,23 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Impero Ltd</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">IMPERO</a>
-      <div class="links">
+
+  <!-- NAV (matches index.html) -->
+  <nav class="site-nav">
+    <div class="container navbar">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to Home">
+          <img src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png" alt="Impero Ltd Logo">
+        </a>
+      </div>
+
+      <div class="menu">
         <a href="index.html">Home</a>
         <a href="careers.html">Careers</a>
         <a href="culture.html">Culture</a>
         <a href="about.html">About</a>
-        <a class="active" href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
 
+  <!-- PAGE HERO -->
   <header class="page-hero">
     <div class="container">
       <h1>Contact</h1>
@@ -28,13 +36,14 @@
     </div>
   </header>
 
+  <!-- FORM -->
   <main class="section">
     <div class="container">
       <div class="form-card">
 
-        <!-- Netlify Form -->
         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
           <input type="hidden" name="form-name" value="contact" />
+
           <p style="display:none;">
             <label>Don’t fill this out: <input name="bot-field" /></label>
           </p>
@@ -77,14 +86,23 @@
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="y"></span> Impero Ltd</p>
+  <!-- FOOTER (matches index.html style) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" aria-label="Go to Home">
+        <img
+          src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png"
+          alt="Impero Ltd Logo"
+          class="footer-logo"
+        />
+      </a>
+      <p>© <span id="y"></span> Impero Ltd. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
