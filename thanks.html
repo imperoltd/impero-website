@@ -3,26 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thanks | Impero Ltd</title>
-  <link rel="stylesheet" href="/styles.css">
+  <title>Thank You | Impero Ltd</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">IMPERO</a>
-      <div class="links">
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="container navbar">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to Home">
+          <img src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png" alt="Impero Ltd Logo">
+        </a>
+      </div>
+
+      <div class="menu">
         <a href="index.html">Home</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="careers.html">Careers</a>
+        <a href="culture.html">Culture</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
 
-  <header class="page-hero">
+  <!-- THANK YOU MESSAGE -->
+  <main class="section">
     <div class="container">
-      <h1>Message sent.</h1>
-      <p class="lead">Thanks — we’ll get back to you soon.</p>
-      <a class="cta-btn dark" href="index.html">Back to Home</a>
+      <div class="form-card" style="text-align:center;">
+
+        <h1>Thank you.</h1>
+
+        <p class="lead" style="margin-top:12px;">
+          Your message has been sent successfully.
+        </p>
+
+        <p style="margin-top:14px; color:#5b5b5b;">
+          A member of the Impero team will be in touch shortly.
+        </p>
+
+        <a href="index.html" class="cta-btn dark" style="margin-top:24px;">
+          Back to Home
+        </a>
+
+      </div>
     </div>
-  </header>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" aria-label="Go to Home">
+        <img
+          src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png"
+          alt="Impero Ltd Logo"
+          class="footer-logo"
+        />
+      </a>
+      <p>© <span id="y"></span> Impero Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
