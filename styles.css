@@ -226,6 +226,17 @@ nav {
   justify-content:center;
   margin-bottom: 18px;
 }
+.hero-logo img{
+  height: 95px;   /* clean, balanced size */
+  width: auto;
+  filter: drop-shadow(0 14px 32px rgba(0,0,0,.5));
+}
+
+@media (max-width: 600px){
+  .hero-logo img{
+    height: 80px;
+  }
+}
 /* ===== Impero Dark Theme Overrides ===== */
 
 .hero--vertex{
