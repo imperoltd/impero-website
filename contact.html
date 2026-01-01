@@ -42,7 +42,14 @@
     <div class="container">
       <div class="form-card">
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/thanks.html"
+          enctype="multipart/form-data"
+        >
           <input type="hidden" name="form-name" value="contact" />
 
           <p style="display:none;">
@@ -73,6 +80,13 @@
               <option>Client enquiry</option>
               <option>Other</option>
             </select>
+          </div>
+
+          <!-- ✅ NEW: CV upload -->
+          <div class="field">
+            <label for="cv">Attach CV (PDF/DOC)</label>
+            <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx">
+            <small class="help">PDF/DOC preferred. Keep file size small (max ~8MB).</small>
           </div>
 
           <div class="field">
