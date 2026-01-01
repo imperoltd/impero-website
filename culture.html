@@ -9,22 +9,26 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<nav aria-label="Primary">
+<nav class="site-nav" aria-label="Primary">
   <div class="container navbar">
-    <a class="brand" href="index.html" aria-label="Impero Ltd Home">
-      <img src="assets/logo-impero.png" alt="Impero Ltd logo">
-    </a>
+    <div class="logo">
+      <a href="index.html" aria-label="Impero Ltd Home">
+        <img src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png" alt="Impero Ltd Logo">
+      </a>
+    </div>
+
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="careers.html">Careers</a>
       <a href="culture.html" aria-current="page">Culture</a>
       <a href="about.html">About</a>
-      <a href="contact.html" class="cta">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </nav>
 
-<header class="hero" style="--hero:url('assets/hero-culture.jpg')">
+<!-- Random hero image wired in for now -->
+<header class="hero" style="--hero:url('images/IMG_1185.png')">
   <div class="container hero-inner">
     <div class="kicker">Culture</div>
     <h1>Standards. Growth. Results.</h1>
@@ -38,21 +42,28 @@
       <h2>Life at Impero</h2>
       <p>High standards, coaching, team energy, travel, and wins earned the right way.</p>
 
+      <!-- Gallery wired to existing images -->
       <div class="gallery" style="margin-top:16px">
-        <a href="#"><img src="assets/culture-1.jpg" alt="Team culture photo"></a>
-        <a href="#"><img src="assets/culture-2.jpg" alt="Team culture photo"></a>
-        <a href="#"><img src="assets/culture-3.jpg" alt="Team culture photo"></a>
-        <a href="#"><img src="assets/culture-4.jpg" alt="Team culture photo"></a>
-        <a href="#"><img src="assets/culture-5.jpg" alt="Team culture photo"></a>
-        <a href="#"><img src="assets/culture-6.jpg" alt="Team culture photo"></a>
+        <img src="images/IMG_1187.png" alt="Team culture photo">
+        <img src="images/IMG_1191.png" alt="Team event photo">
+        <img src="images/IMG_1193.png" alt="Leadership event photo">
+        <img src="images/IMG_1192.png" alt="Impero team photo">
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
-  <div class="container">© <span id="y"></span> Impero Ltd</div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img
+      src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png"
+      alt="Impero Ltd Logo"
+      class="footer-logo"
+    />
+    <p>© Impero Ltd. All rights reserved.</p>
+  </div>
 </footer>
+
 <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
