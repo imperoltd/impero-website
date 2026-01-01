@@ -9,22 +9,26 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<nav aria-label="Primary">
+<nav class="site-nav" aria-label="Primary">
   <div class="container navbar">
-    <a class="brand" href="index.html" aria-label="Impero Ltd Home">
-      <img src="assets/logo-impero.png" alt="Impero Ltd logo">
-    </a>
+    <div class="logo">
+      <a href="index.html" aria-label="Impero Ltd Home">
+        <img src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png" alt="Impero Ltd Logo">
+      </a>
+    </div>
+
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="careers.html" aria-current="page">Careers</a>
       <a href="culture.html">Culture</a>
       <a href="about.html">About</a>
-      <a href="contact.html" class="cta">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </nav>
 
-<header class="hero" style="--hero:url('assets/hero-careers.jpg')">
+<!-- Random image wired in for now -->
+<header class="hero" style="--hero:url('images/IMG_1192.png')">
   <div class="container hero-inner">
     <div class="kicker">Careers</div>
     <h1>Build Your Future</h1>
@@ -57,16 +61,26 @@
           <a class="cta" href="contact.html">Apply / Enquire</a>
         </p>
       </div>
+
+      <!-- Random image wired in for now -->
       <div class="panel">
-        <img src="assets/careers-side.jpg" alt="Team success photo">
+        <img src="images/IMG_1187.png" alt="Team success photo">
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
-  <div class="container">© <span id="y"></span> Impero Ltd</div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img
+      src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png"
+      alt="Impero Ltd Logo"
+      class="footer-logo"
+    />
+    <p>© Impero Ltd. All rights reserved.</p>
+  </div>
 </footer>
+
 <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
