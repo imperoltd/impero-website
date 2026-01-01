@@ -23,21 +23,22 @@
         <a href="careers.html">Careers</a>
         <a href="culture.html">Culture</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <header class="page-hero">
-    <div class="container">
-      <h1>Contact</h1>
+  <!-- PAGE HERO (with image, random for now) -->
+  <header class="hero" style="--hero:url('images/IMG_1191.png')">
+    <div class="container hero-inner">
+      <div class="kicker">Contact</div>
+      <h1>Let’s talk</h1>
       <p class="lead">Apply, collaborate, or ask a question — we’ll get back to you.</p>
     </div>
   </header>
 
   <!-- FORM -->
-  <main class="section">
+  <main id="main" class="section contact-section">
     <div class="container">
       <div class="form-card">
 
@@ -79,7 +80,7 @@
             <textarea id="message" name="message" rows="6" placeholder="Tell us a bit about you…" required></textarea>
           </div>
 
-          <button class="cta-btn dark" type="submit">Send message</button>
+          <button class="cta-btn" type="submit">Send message</button>
         </form>
 
       </div>
