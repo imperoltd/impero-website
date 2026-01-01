@@ -266,3 +266,53 @@ nav {
   border-color: rgba(199,164,74,.70);
   background: rgba(199,164,74,.16);
 }
+/* ===== Impero Dark Theme Overrides ===== */
+
+.hero--vertex{
+  background:
+    radial-gradient(900px 500px at 50% 20%, rgba(199,164,74,.18), transparent 60%),
+    linear-gradient(180deg, var(--navy2), var(--navy));
+  color: #fff;
+}
+
+.hero-title{
+  color:#fff;
+}
+
+.hero-lead{
+  color: var(--muted);
+}
+
+.site-nav{
+  background: var(--navy);
+  border-bottom: 1px solid var(--line);
+}
+
+.menu a{
+  color:#fff;
+}
+
+.menu a:hover{
+  color: var(--gold);
+}
+
+.hero-logo img{
+  background: radial-gradient(circle, rgba(199,164,74,.25), transparent 60%);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.cta{
+  color:#fff;
+  background: rgba(199,164,74,.12);
+  border-color: rgba(199,164,74,.45);
+}
+
+.cta:hover{
+  background: rgba(199,164,74,.22);
+  border-color: rgba(199,164,74,.75);
+}
+
+.cta--ghost{
+  background: transparent;
+}
