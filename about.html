@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About · Impero Ltd</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Primary">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Impero Ltd Home">
+      <img src="assets/logo-impero.png" alt="Impero Ltd logo">
+    </a>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="careers.html">Careers</a>
+      <a href="culture.html">Culture</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="--hero:url('assets/hero-about.jpg')">
+  <div class="container hero-inner">
+    <div class="kicker">About</div>
+    <h1>Built on Leadership</h1>
+    <p class="lead">Impero exists to develop individuals into high performers — and high performers into leaders.</p>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2>Our mission</h2>
+        <p>
+          We create opportunity through structured sales and marketing campaigns — but our real focus is development.
+          Standards, coaching, discipline and belief: that’s how we build long-term success.
+        </p>
+        <div class="card" style="margin-top:16px">
+          <h3>What “Impero” means</h3>
+          <p>Impero translates to “Empire” — a symbol of structure, expansion, and legacy.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <img src="assets/about-leadership.jpg" alt="Leadership photo">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Impero Ltd</div>
+</footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
