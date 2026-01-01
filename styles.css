@@ -54,6 +54,14 @@ nav {
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
+:root{
+  --navy:#0b1220;          /* main Impero navy */
+  --navy2:#0f1a2e;         /* subtle gradient */
+  --gold:#c7a44a;          /* logo gold */
+  --text:#ffffff;
+  --muted:#cfd6e4;
+  --line:rgba(255,255,255,.12);
+}
 .brand {
   font-weight: 800;
   letter-spacing: 2px;
