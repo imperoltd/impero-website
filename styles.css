@@ -535,3 +535,81 @@ nav {
   background: radial-gradient(circle at 50% 50%, rgba(199,164,74,.18), transparent 65%);
   pointer-events:none;
 }
+/* ===== Contact page form styling ===== */
+.contact-section{
+  background: linear-gradient(180deg, var(--navy), #0b1324);
+  border-top: 1px solid var(--line);
+  padding: 80px 0;
+}
+
+.form-card{
+  max-width: 760px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.45);
+}
+
+.field{
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.field label{
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .01em;
+}
+
+.field input,
+.field select,
+.field textarea{
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(15,26,46,.55);
+  color: #fff;
+}
+
+.field input::placeholder,
+.field textarea::placeholder{
+  color: rgba(255,255,255,.55);
+}
+
+.field select{
+  appearance: none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  outline: 2px solid rgba(199,164,74,.65);
+  outline-offset: 2px;
+  border-color: rgba(199,164,74,.35);
+}
+
+/* Reuse your gold button styling */
+.cta-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(199,164,74,.55);
+  background: rgba(199,164,74,.14);
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:.02em;
+  cursor:pointer;
+}
+
+.cta-btn:hover{
+  background: rgba(199,164,74,.22);
+  border-color: rgba(199,164,74,.75);
+}
