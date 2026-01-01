@@ -26,18 +26,46 @@
     </div>
   </nav>
 
-  <header class="hero hero--vertex">
-    <div class="container hero-inner">
-      <div class="kicker">Submitted</div>
-      <h1 class="hero-title">Application received.</h1>
-      <p class="lead hero-lead">Thanks — we’ll be in touch shortly.</p>
+  <!-- Make sure something always shows -->
+  <main>
+    <header class="hero hero--vertex" style="min-height: calc(100vh - 70px); display:flex; align-items:center;">
+      <div class="container hero-inner" style="width:100%; padding: 80px 20px;">
+        <div class="kicker" style="text-align:center; color: rgba(255,255,255,.7); letter-spacing:.12em; text-transform:uppercase;">
+          Submitted
+        </div>
 
-      <div class="hero-actions">
-        <a class="cta" href="index.html">Back to Home</a>
-        <a class="cta cta--ghost" href="careers.html">View Careers</a>
+        <h1 class="hero-title" style="text-align:center;">
+          Application received.
+        </h1>
+
+        <p class="lead hero-lead" style="text-align:center;">
+          Thanks — we’ll be in touch shortly.
+        </p>
+
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="cta" href="index.html">Back to Home</a>
+          <a class="cta cta--ghost" href="careers.html">View Careers</a>
+        </div>
       </div>
+    </header>
+  </main>
+
+  <footer class="site-footer" style="margin-top:0;">
+    <div class="container footer-inner">
+      <a href="index.html" aria-label="Go to Home">
+        <img
+          src="images/AA494C2B-FEC7-4E7A-AFA8-15034ADB8E98.png"
+          alt="Impero Ltd Logo"
+          class="footer-logo"
+        />
+      </a>
+      <p>© <span id="y"></span> Impero Ltd. All rights reserved.</p>
     </div>
-  </header>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
