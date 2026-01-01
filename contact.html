@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
   <!-- NAV (matches index.html) -->
   <nav class="site-nav">
     <div class="container navbar">
@@ -28,7 +27,7 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO (with image, random for now) -->
+  <!-- PAGE HERO -->
   <header class="hero" style="--hero:url('images/IMG_1191.png')">
     <div class="container hero-inner">
       <div class="kicker">Contact</div>
@@ -42,16 +41,19 @@
     <div class="container">
       <div class="form-card">
 
+        <!-- ✅ Netlify form (file upload + redirect) -->
         <form
           name="contact"
           method="POST"
+          enctype="multipart/form-data"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           action="/thanks.html"
-          enctype="multipart/form-data"
         >
+          <!-- required for Netlify forms -->
           <input type="hidden" name="form-name" value="contact" />
 
+          <!-- honeypot field -->
           <p style="display:none;">
             <label>Don’t fill this out: <input name="bot-field" /></label>
           </p>
@@ -82,10 +84,10 @@
             </select>
           </div>
 
-          <!-- ✅ NEW: CV upload -->
+          <!-- ✅ CV upload -->
           <div class="field">
             <label for="cv">Attach CV (PDF/DOC)</label>
-            <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx">
+            <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx,.pdf">
             <small class="help">PDF/DOC preferred. Keep file size small (max ~8MB).</small>
           </div>
 
@@ -101,7 +103,7 @@
     </div>
   </main>
 
-  <!-- FOOTER (matches index.html style) -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <a href="index.html" aria-label="Go to Home">
@@ -118,6 +120,5 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
