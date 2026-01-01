@@ -407,3 +407,29 @@ nav {
 .dark-section .gallery img{
   border: 1px solid rgba(255,255,255,0.08);
 }
+/* ===== Values section dark theme ===== */
+.section.values-dark{
+  background: linear-gradient(180deg, var(--navy), #0b1324);
+  padding: 80px 20px;
+  border-top: 1px solid var(--line);
+}
+
+.section.values-dark h2{
+  color:#fff;
+  text-align:center;
+  margin-bottom: 44px;
+}
+
+.section.values-dark .card{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.section.values-dark .card h3{ color:#fff; }
+.section.values-dark .card p{ color:#cfd6e0; }
+
+.section.values-dark .card:hover{
+  transform: translateY(-4px);
+  border-color: rgba(199,164,74,.35);
+  box-shadow: 0 14px 40px rgba(0,0,0,.4);
+}
