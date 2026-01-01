@@ -613,3 +613,10 @@ nav {
   background: rgba(199,164,74,.22);
   border-color: rgba(199,164,74,.75);
 }
+.help{
+  color: rgba(255,255,255,.65);
+  font-size: 12px;
+}
+.field input[type="file"]{
+  padding: 10px;
+}
