@@ -478,3 +478,60 @@ nav {
     order: -1;
   }
 }
+/* ===== Careers band (match dark Impero theme) ===== */
+
+.cta-band--dark{
+  background: linear-gradient(180deg, var(--navy), #0b1324);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta-band--dark h2{
+  color: #fff;
+  font-size: clamp(28px, 4.5vw, 44px);
+  margin: 0 0 14px;
+}
+
+.cta-band--dark .lead{
+  color: var(--muted);
+  max-width: 780px;
+  margin: 0 auto 26px;
+  line-height: 1.7;
+}
+
+/* Button */
+.cta-band--dark .cta-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(199,164,74,.55);
+  background: rgba(199,164,74,.14);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.cta-band--dark .cta-btn:hover{
+  background: rgba(199,164,74,.22);
+  border-color: rgba(199,164,74,.75);
+}
+
+/* Optional: subtle glow behind the section */
+.cta-band--dark{
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-band--dark::before{
+  content:"";
+  position:absolute;
+  inset:-120px -120px auto -120px;
+  height: 280px;
+  background: radial-gradient(circle at 50% 50%, rgba(199,164,74,.18), transparent 65%);
+  pointer-events:none;
+}
